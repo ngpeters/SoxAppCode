@@ -330,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z68-wa-afV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="896"/>
+            <point key="canvasLocation" x="-783" y="896"/>
         </scene>
         <!--Resort Page View Controller-->
         <scene sceneID="exp-mw-UMD">
@@ -355,9 +355,9 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hev-JM-a7i">
-                                <rect key="frame" x="283" y="289" width="76" height="30"/>
+                                <rect key="frame" x="226" y="267" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Zoom"/>
+                                <state key="normal" title="Zoom Main Map"/>
                                 <connections>
                                     <segue destination="S4a-dE-91t" kind="popoverPresentation" popoverAnchorView="Hev-JM-a7i" id="gkF-oZ-JWe">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -370,6 +370,16 @@
                                 <state key="normal" title="New Comment"/>
                                 <connections>
                                     <segue destination="MWS-Ke-Zg4" kind="show" id="G91-XW-emy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNv-Li-NMh">
+                                <rect key="frame" x="206" y="289" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Zoom Mineral Basin"/>
+                                <connections>
+                                    <segue destination="0ix-0v-q3J" kind="popoverPresentation" popoverAnchorView="nNv-Li-NMh" id="qjb-2g-0Hs">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -594,11 +604,71 @@
             </objects>
             <point key="canvasLocation" x="1740" y="897"/>
         </scene>
+        <!--Second Map View Controller-->
+        <scene sceneID="b6c-sX-N3b">
+            <objects>
+                <viewController id="0ix-0v-q3J" customClass="SecondMapViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FWd-vP-Brw"/>
+                        <viewControllerLayoutGuide type="bottom" id="3SO-xd-n8B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HDZ-tx-NRK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNZ-hp-nUS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mineral.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rIS-oE-5i4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d7-jy-3aa">
+                                        <rect key="frame" x="329" y="629" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <segue destination="tm8-hu-lac" kind="show" id="dtc-b6-ROQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rIS-oE-5i4" secondAttribute="bottom" id="8It-eX-h7a"/>
+                                    <constraint firstItem="rIS-oE-5i4" firstAttribute="leading" secondItem="yNZ-hp-nUS" secondAttribute="leading" id="VJa-Wi-yoI"/>
+                                    <constraint firstAttribute="trailing" secondItem="rIS-oE-5i4" secondAttribute="trailing" id="bUC-S9-ahM"/>
+                                    <constraint firstItem="rIS-oE-5i4" firstAttribute="centerX" secondItem="yNZ-hp-nUS" secondAttribute="centerX" id="fmk-Ma-bdN"/>
+                                    <constraint firstItem="rIS-oE-5i4" firstAttribute="centerY" secondItem="yNZ-hp-nUS" secondAttribute="centerY" id="nWv-UW-jAI"/>
+                                    <constraint firstItem="rIS-oE-5i4" firstAttribute="top" secondItem="yNZ-hp-nUS" secondAttribute="top" id="wl5-9U-TXj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="0ix-0v-q3J" id="274-ws-cCp"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3SO-xd-n8B" firstAttribute="top" secondItem="yNZ-hp-nUS" secondAttribute="bottom" id="0vV-L6-sfO"/>
+                            <constraint firstItem="yNZ-hp-nUS" firstAttribute="leading" secondItem="HDZ-tx-NRK" secondAttribute="leading" id="1yd-6G-VXJ"/>
+                            <constraint firstItem="yNZ-hp-nUS" firstAttribute="top" secondItem="HDZ-tx-NRK" secondAttribute="top" id="333-rB-QWg"/>
+                            <constraint firstItem="yNZ-hp-nUS" firstAttribute="centerX" secondItem="HDZ-tx-NRK" secondAttribute="centerX" id="Z5h-a7-ZoI"/>
+                            <constraint firstItem="yNZ-hp-nUS" firstAttribute="centerY" secondItem="HDZ-tx-NRK" secondAttribute="centerY" id="m4w-rw-ejv"/>
+                            <constraint firstAttribute="trailing" secondItem="yNZ-hp-nUS" secondAttribute="trailing" id="mLJ-Uv-eeU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="rIS-oE-5i4" id="szK-Mj-Y3O"/>
+                        <outlet property="scrollView" destination="yNZ-hp-nUS" id="Kgn-fk-eLj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="reZ-0n-QYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="1644"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Mineral.jpg" width="1052" height="630"/>
         <image name="snowbirdMap.jpg" width="2264" height="1556"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NWq-Aa-wSm"/>
+        <segue reference="dtc-b6-ROQ"/>
     </inferredMetricsTieBreakers>
 </document>

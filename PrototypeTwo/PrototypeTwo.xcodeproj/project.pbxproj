@@ -10,11 +10,12 @@
 		4701FDA71EA2F67400761243 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701FDA61EA2F67400761243 /* CommentTableViewCell.swift */; };
 		4744EE781E9D384800DAAA4B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4744EE771E9D384800DAAA4B /* MapViewController.swift */; };
 		475D1E1E1EA9B8B100B270CA /* snowbirdMap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475D1E1D1EA9B8B100B270CA /* snowbirdMap.jpg */; };
-		475D1E201EA9BABB00B270CA /* Mineral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475D1E1F1EA9BABB00B270CA /* Mineral.jpg */; };
 		475D1E221EA9BAC000B270CA /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475D1E211EA9BAC000B270CA /* splash.jpg */; };
 		475D1E241EA9BDE000B270CA /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D1E231EA9BDE000B270CA /* RegisterPageViewController.swift */; };
 		475D1E261EA9BDFE00B270CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D1E251EA9BDFE00B270CA /* LoginViewController.swift */; };
 		475D1E281EA9BE0A00B270CA /* ResortPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D1E271EA9BE0A00B270CA /* ResortPageViewController.swift */; };
+		475D1E2A1EA9C17500B270CA /* SecondMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D1E291EA9C17500B270CA /* SecondMapViewController.swift */; };
+		475D1E2C1EA9C65A00B270CA /* Mineral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 475D1E2B1EA9C65A00B270CA /* Mineral.jpg */; };
 		47F59C031E81952300E1A71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C021E81952300E1A71A /* AppDelegate.swift */; };
 		47F59C051E81952300E1A71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C041E81952300E1A71A /* ViewController.swift */; };
 		47F59C081E81952300E1A71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F59C061E81952300E1A71A /* Main.storyboard */; };
@@ -41,11 +42,12 @@
 		4701FDA61EA2F67400761243 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		4744EE771E9D384800DAAA4B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		475D1E1D1EA9B8B100B270CA /* snowbirdMap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snowbirdMap.jpg; path = "../../../SoxBaseCode-mineralbasin/PrototypeTwo/PrototypeTwo/snowbirdMap.jpg"; sourceTree = "<group>"; };
-		475D1E1F1EA9BABB00B270CA /* Mineral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mineral.jpg; path = "../../../SoxBaseCode-mineralbasin/PrototypeTwo/PrototypeTwo/Mineral.jpg"; sourceTree = "<group>"; };
 		475D1E211EA9BAC000B270CA /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = splash.jpg; path = "../../../SoxBaseCode-mineralbasin/PrototypeTwo/PrototypeTwo/splash.jpg"; sourceTree = "<group>"; };
 		475D1E231EA9BDE000B270CA /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		475D1E251EA9BDFE00B270CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		475D1E271EA9BE0A00B270CA /* ResortPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResortPageViewController.swift; sourceTree = "<group>"; };
+		475D1E291EA9C17500B270CA /* SecondMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondMapViewController.swift; sourceTree = "<group>"; };
+		475D1E2B1EA9C65A00B270CA /* Mineral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mineral.jpg; path = ../../../Mineral.jpg; sourceTree = "<group>"; };
 		47F59BFF1E81952300E1A71A /* PrototypeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrototypeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F59C021E81952300E1A71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F59C041E81952300E1A71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,9 +103,9 @@
 		47F59C011E81952300E1A71A /* PrototypeTwo */ = {
 			isa = PBXGroup;
 			children = (
-				475D1E1F1EA9BABB00B270CA /* Mineral.jpg */,
 				475D1E211EA9BAC000B270CA /* splash.jpg */,
 				47F59C021E81952300E1A71A /* AppDelegate.swift */,
+				475D1E2B1EA9C65A00B270CA /* Mineral.jpg */,
 				475D1E1D1EA9B8B100B270CA /* snowbirdMap.jpg */,
 				47F59C041E81952300E1A71A /* ViewController.swift */,
 				47F59C061E81952300E1A71A /* Main.storyboard */,
@@ -119,6 +121,7 @@
 				47F59C111E81952300E1A71A /* Info.plist */,
 				47F59C091E81952300E1A71A /* PrototypeTwo.xcdatamodeld */,
 				47F59C2F1E843A6C00E1A71A /* CommentTableViewController.swift */,
+				475D1E291EA9C17500B270CA /* SecondMapViewController.swift */,
 			);
 			path = PrototypeTwo;
 			sourceTree = "<group>";
@@ -215,9 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475D1E2C1EA9C65A00B270CA /* Mineral.jpg in Resources */,
 				475D1E221EA9BAC000B270CA /* splash.jpg in Resources */,
 				475D1E1E1EA9B8B100B270CA /* snowbirdMap.jpg in Resources */,
-				475D1E201EA9BABB00B270CA /* Mineral.jpg in Resources */,
 				47F59C101E81952300E1A71A /* LaunchScreen.storyboard in Resources */,
 				47F59C0D1E81952300E1A71A /* Assets.xcassets in Resources */,
 				47F59C081E81952300E1A71A /* Main.storyboard in Resources */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				475D1E241EA9BDE000B270CA /* RegisterPageViewController.swift in Sources */,
+				475D1E2A1EA9C17500B270CA /* SecondMapViewController.swift in Sources */,
 				4701FDA71EA2F67400761243 /* CommentTableViewCell.swift in Sources */,
 				47F9B85F1E96AB8E007121DD /* WriteCommentViewController.swift in Sources */,
 				47F59C301E843A6C00E1A71A /* CommentTableViewController.swift in Sources */,
