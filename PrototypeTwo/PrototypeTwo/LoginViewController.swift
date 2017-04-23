@@ -15,15 +15,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userPasswordTextField: UITextField!
     
     var userID = Int()
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -32,14 +30,9 @@ class LoginViewController: UIViewController {
         let username = userEmailTextField.text!
         let userPassword = userPasswordTextField.text!
         
-        //stand in for database testing
-//        UserDefaults.standard.set(username, forKey: "username")
-//        let userNameStored = UserDefaults.standard.string(forKey: "username")
-//        UserDefaults.standard.set(userPassword, forKey : "userPassword")
-//        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
-        
         let parameters = ["username" : username ,
                           "password" : userPassword].map { "\($0)=\($1 )" }
+        
         let userIDString = parameters.joined(separator: "&")
         
         let url:String = "http://localhost:9000/login?"+userIDString
@@ -79,13 +72,20 @@ class LoginViewController: UIViewController {
             print(userID)
             if (self.userID != 0){
                 //login successful
-                UserDefaults.standard.set(userID, forKey: "userID")
+                UserDefaults.standard.set(self.userID, forKey: "userID")
                 UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 UserDefaults.standard.synchronize()
                 self.dismiss(animated: true, completion: nil)
             }
             else{
-                displayAlertMessage(userMessage: "Email or Password are incorrect")
+                
+                if (self.userID == 0 && self.count == 0){
+                    self.count += 1
+                    displayWaitingMessage(userMessage: "Processing... Please press the login button once more")
+                }
+                if (self.userID == 0 && self.count > 0){
+                    displayAlertMessage(userMessage: "Email or Password are incorrect")
+                }
         }
     }
     //display alert
@@ -95,15 +95,12 @@ class LoginViewController: UIViewController {
         myAlert.addAction(alertAction)
         self.present(myAlert, animated: true, completion:nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func displayWaitingMessage(userMessage: String) {
+        let myAlert = UIAlertController(title: "Database Check", message: userMessage, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        myAlert.addAction(alertAction)
+        self.present(myAlert, animated: true, completion:nil)
     }
-    */
 
 }
