@@ -24,15 +24,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    // The number of columns of data
-    //func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-     //   return 1
-    //}
     
     // The number of rows of data
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {

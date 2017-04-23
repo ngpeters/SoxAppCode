@@ -13,6 +13,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
+    
+    var userID = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,27 +28,66 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func LoginButtonGo(_ sender: Any) {
-        let userEmail = userEmailTextField.text
-        let userPassword = userPasswordTextField.text
-        //send Email and password to server side
-        //do validation on server side and send back confirmation
+        var userData = [String: AnyObject]()
+        let username = userEmailTextField.text!
+        let userPassword = userPasswordTextField.text!
         
-        //for now, using locally stored email and password
-        let userEmailStored = UserDefaults.standard.string(forKey: "userEmail")
-        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
+        //stand in for database testing
+//        UserDefaults.standard.set(username, forKey: "username")
+//        let userNameStored = UserDefaults.standard.string(forKey: "username")
+//        UserDefaults.standard.set(userPassword, forKey : "userPassword")
+//        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
         
-        if (userEmailStored == userEmail && userPasswordStored == userPassword){
+        let parameters = ["username" : username ,
+                          "password" : userPassword].map { "\($0)=\($1 )" }
+        let userIDString = parameters.joined(separator: "&")
+        
+        let url:String = "http://localhost:9000/login?"+userIDString
+        
+        let urlRequest = URL(string: url)
+        URLSession.shared.dataTask(with: urlRequest!, completionHandler: {
+            (data, response, error) in
+            if (error != nil) {
+                print(error.debugDescription)
+            }else{
+        do{
+            let jArray = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                as! NSDictionary as Dictionary
+            //print(jArray)
+            userData = jArray as! [String : AnyObject]
+            print(userData)
+            
+            
+            if let dic = jArray as? [String : AnyObject]{
+                if let nestedDictionary = dic["body"] as? Int {
+                    self.userID = nestedDictionary
+                    if (nestedDictionary == 0){
+                        UserDefaults.standard.set(self.userID, forKey: "userID")
+                        UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+                        UserDefaults.standard.synchronize()
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                }
+            }
+        }catch let error as NSError{
+            print(error)
+                }
+            }
+        }).resume()
+            
+            print("userID: ")
+            print(userID)
+            if (self.userID != 0){
                 //login successful
+                UserDefaults.standard.set(userID, forKey: "userID")
                 UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 UserDefaults.standard.synchronize()
                 self.dismiss(animated: true, completion: nil)
             }
-        else{
-            displayAlertMessage(userMessage: "Email or Password are incorrect")
+            else{
+                displayAlertMessage(userMessage: "Email or Password are incorrect")
         }
-        
     }
-    
     //display alert
     func displayAlertMessage(userMessage: String) {
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: .alert)
