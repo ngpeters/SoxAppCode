@@ -46,19 +46,20 @@ class LoginViewController: UIViewController {
         do{
             let jArray = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                 as! NSDictionary as Dictionary
-            //print(jArray)
             userData = jArray as! [String : AnyObject]
             print(userData)
-            
             
             if let dic = jArray as? [String : AnyObject]{
                 if let nestedDictionary = dic["body"] as? Int {
                     self.userID = nestedDictionary
-                    if (nestedDictionary == 0){
+                    if (nestedDictionary != 0){
                         UserDefaults.standard.set(self.userID, forKey: "userID")
                         UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                         UserDefaults.standard.synchronize()
                         self.dismiss(animated: true, completion: nil)
+                    }
+                    else{
+                        self.displayAlertMessage(userMessage: "Email or Password are incorrect")
                     }
                 }
             }
@@ -67,25 +68,17 @@ class LoginViewController: UIViewController {
                 }
             }
         }).resume()
-            
-            print("userID: ")
-            print(userID)
-            if (self.userID != 0){
-                //login successful
-                UserDefaults.standard.set(self.userID, forKey: "userID")
-                UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
-                UserDefaults.standard.synchronize()
-                self.dismiss(animated: true, completion: nil)
-            }
-            else{
-                
-                if (self.userID == 0 && self.count == 0){
-                    self.count += 1
-                    displayWaitingMessage(userMessage: "Processing... Please press the login button once more")
-                }
-                if (self.userID == 0 && self.count > 0){
-                    displayAlertMessage(userMessage: "Email or Password are incorrect")
-                }
+        print("userID: ")
+        print(userID)
+        if (self.userID != 0){
+            //login successful
+            UserDefaults.standard.set(self.userID, forKey: "userID")
+            UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+            UserDefaults.standard.synchronize()
+            self.dismiss(animated: true, completion: nil)
+        }
+        else{
+            displayAlertMessage(userMessage: "Email or Password are incorrect")
         }
     }
     //display alert
