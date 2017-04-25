@@ -88,12 +88,5 @@ class LoginViewController: UIViewController {
         myAlert.addAction(alertAction)
         self.present(myAlert, animated: true, completion:nil)
     }
-    
-    func displayWaitingMessage(userMessage: String) {
-        let myAlert = UIAlertController(title: "Database Check", message: userMessage, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        myAlert.addAction(alertAction)
-        self.present(myAlert, animated: true, completion:nil)
-    }
 
 }
