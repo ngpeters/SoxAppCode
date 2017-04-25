@@ -78,7 +78,9 @@ class WriteCommentViewController: UIViewController, UIPickerViewDelegate, UIPick
         starRating.didFinishTouchingCosmos = { rating in
             self.starRating.rating = rating
         }
+        
         runRating = Int(starRating.rating)
+        
         let runRatingString = String(runRating)
         //GET userID from saved userDefaults
         let userID = (UserDefaults.standard.string(forKey: "userID"))!
@@ -137,7 +139,6 @@ class WriteCommentViewController: UIViewController, UIPickerViewDelegate, UIPick
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
         self.pickedRun.text = self.runs[row]
         runID = row
     }
