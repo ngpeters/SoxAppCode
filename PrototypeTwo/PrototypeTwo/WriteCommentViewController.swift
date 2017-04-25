@@ -75,6 +75,8 @@ class WriteCommentViewController: UIViewController, UIPickerViewDelegate, UIPick
     //posting function, called from button
     func data_request(url: String)
     {
+        runRating = Int(starRating.rating)
+        
         starRating.didFinishTouchingCosmos = { rating in
             self.starRating.rating = rating
         }
