@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
         
         let userIDString = parameters.joined(separator: "&")
         
-        let url:String = "http://localhost:9000/login?"+userIDString
+        let url:String = "https://ratemyrun.herokuapp.com/login?"+userIDString
         
         let urlRequest = URL(string: url)
         URLSession.shared.dataTask(with: urlRequest!, completionHandler: {

@@ -102,7 +102,7 @@ class RegisterPageViewController: UIViewController {
         
         //store data
         //to server
-        data_request("http://localhost:9000/newuser?")
+        data_request("https://ratemyrun.herokuapp.com/newuser?")
         
         //display alert message with confirmation
         let myAlert = UIAlertController(title: "Alert", message: "Registration Successful", preferredStyle: .alert)
