@@ -36,6 +36,14 @@ class CommentTableViewController: UITableViewController {
         self.loadCommentData()
     }
     func loadCommentData(){
+        commentArray.removeAll()
+        commentID.removeAll()
+        timeList.removeAll()
+        userID.removeAll()
+        username.removeAll()
+        runIDList.removeAll()
+        ratingList.removeAll()
+        timeStrings.removeAll()
         let url:String = "https://ratemyrun.herokuapp.com/comment?resortID=1"
         let urlRequest = URL(string: url)
         
@@ -56,19 +64,10 @@ class CommentTableViewController: UITableViewController {
                                 self.ratingList.append((comment["rating"] as? Int)!)
                                 self.timeList.append((comment["commentTime"] as? Int)!)
                                 self.runIDList.append((comment["runID"] as? Int)!)
+                                self.username.append((comment["username"] as? String)!)
                             }
-                            //print("commentID")
-                            //print(self.commentID)
-                            //print("commentArray")
-                            //print(self.commentArray)
-                            //print("ratingList")
-                            //print(self.ratingList)
-                            //print("timeList")
-                            //print(self.timeList)
-                            //print("userID")
-                            //print(self.userID)
                             self.getTimeFormatted(time: self.timeList)
-                            self.getUserName(idArray: self.userID)
+                            //self.getUserName(idArray: self.userID)
                         }
                     }
                     self.tableView.reloadData()
@@ -96,7 +95,7 @@ class CommentTableViewController: UITableViewController {
         
     }
     
-    func getUserName(idArray: [Int]){
+    /*func getUserName(idArray: [Int]){
         for userIDnumber in self.userID {
             
             let userIDString = String(userIDnumber)
@@ -125,7 +124,7 @@ class CommentTableViewController: UITableViewController {
             }).resume()
         }
         
-    }
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
