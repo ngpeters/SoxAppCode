@@ -17,5 +17,12 @@ class ResortPageViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    @IBAction func LogoutButton(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
+        UserDefaults.standard.synchronize()
+        
+        self.performSegue(withIdentifier: "loginViewFromResort", sender: self)
+    }
+    
 }
