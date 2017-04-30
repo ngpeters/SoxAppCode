@@ -63,10 +63,6 @@ class WriteCommentViewController: UIViewController, UIPickerViewDelegate, UIPick
     }
     //posting button
     @IBAction func postComment(_ sender: Any) {
-        print("text: ")
-        print(textView.text)
-        print("runID: ")
-        print(runID)
         data_request(url: "https://ratemyrun.herokuapp.com/newcomment?")
         
         self.performSegue(withIdentifier: "postedComment", sender: nil)
