@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="OUA-XD-m1t">
             <objects>
-                <viewController id="ht5-io-q4o" customClass="ViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ht5-io-q4o" customClass="ViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wOU-ta-s0b"/>
                         <viewControllerLayoutGuide type="bottom" id="CMe-0U-L6c"/>
@@ -74,7 +74,7 @@
         <!--Login View Controller-->
         <scene sceneID="UN0-07-SlU">
             <objects>
-                <viewController id="3rG-RR-84n" customClass="LoginViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3rG-RR-84n" customClass="LoginViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZfA-pN-mQQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ryM-ej-zGx"/>
@@ -180,7 +180,7 @@
         <!--Write Comment View Controller-->
         <scene sceneID="wyw-xR-D7f">
             <objects>
-                <viewController id="MWS-Ke-Zg4" customClass="WriteCommentViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MWS-Ke-Zg4" customClass="WriteCommentViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nfw-M8-W2L"/>
                         <viewControllerLayoutGuide type="bottom" id="Bm7-Tu-Oxn"/>
@@ -205,7 +205,7 @@
                                     <action selector="postComment:" destination="MWS-Ke-Zg4" eventType="touchUpInside" id="Pof-EU-Q44"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="va6-Fj-FmT" customClass="CosmosView" customModule="PrototypeTwo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="va6-Fj-FmT" customClass="CosmosView" customModule="RateMyRun" customModuleProvider="target">
                                 <rect key="frame" x="16" y="526" width="343" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -276,7 +276,7 @@
         <!--Map View Controller-->
         <scene sceneID="4bA-Fb-gxc">
             <objects>
-                <viewController id="S4a-dE-91t" customClass="MapViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="S4a-dE-91t" customClass="MapViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xPs-04-jg7"/>
                         <viewControllerLayoutGuide type="bottom" id="8Bn-r5-cna"/>
@@ -347,7 +347,7 @@
         <!--Resort Page View Controller-->
         <scene sceneID="exp-mw-UMD">
             <objects>
-                <viewController id="tm8-hu-lac" customClass="ResortPageViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tm8-hu-lac" customClass="ResortPageViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v5t-13-O6J"/>
                         <viewControllerLayoutGuide type="bottom" id="lef-x2-k5h"/>
@@ -361,7 +361,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOf-JW-xqz">
-                                <rect key="frame" x="16" y="363" width="343" height="284"/>
+                                <rect key="frame" x="16" y="319" width="343" height="328"/>
                                 <connections>
                                     <segue destination="pbL-i1-6el" kind="embed" id="RNn-NH-6Hh"/>
                                 </connections>
@@ -421,39 +421,39 @@
         <!--Comment Table View Controller-->
         <scene sceneID="mfh-Xi-2Zq">
             <objects>
-                <tableViewController id="pbL-i1-6el" customClass="CommentTableViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="pbL-i1-6el" customClass="CommentTableViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="6ZR-ui-1KK">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="284"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="100" id="gId-Bk-7rD" customClass="CommentTableViewCell" customModule="PrototypeTwo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="343" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="100" id="gId-Bk-7rD" customClass="CommentTableViewCell" customModule="RateMyRun" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gId-Bk-7rD" id="Lie-8c-Y6P">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDJ-y8-dSh">
-                                            <rect key="frame" x="8" y="-1" width="95" height="38"/>
+                                            <rect key="frame" x="8" y="-1" width="127" height="38"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBh-x0-ghi">
-                                            <rect key="frame" x="8" y="45" width="106" height="54"/>
+                                            <rect key="frame" x="8" y="45" width="138" height="54"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiM-Ne-rYJ">
-                                            <rect key="frame" x="122" y="45" width="221" height="54"/>
+                                            <rect key="frame" x="122" y="45" width="253" height="54"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKi-0A-1g6" customClass="CosmosView" customModule="PrototypeTwo" customModuleProvider="target">
-                                            <rect key="frame" x="111" y="8" width="224" height="28"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKi-0A-1g6" customClass="CosmosView" customModule="RateMyRun" customModuleProvider="target">
+                                            <rect key="frame" x="111" y="8" width="256" height="28"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
@@ -522,7 +522,7 @@
         <!--Register Page View Controller-->
         <scene sceneID="4Pe-JM-LJ8">
             <objects>
-                <viewController id="ppE-90-vwy" customClass="RegisterPageViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ppE-90-vwy" customClass="RegisterPageViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H8P-dM-w0F"/>
                         <viewControllerLayoutGuide type="bottom" id="DcL-eR-6yM"/>
@@ -629,7 +629,7 @@
         <!--Second Map View Controller-->
         <scene sceneID="b6c-sX-N3b">
             <objects>
-                <viewController id="0ix-0v-q3J" customClass="SecondMapViewController" customModule="PrototypeTwo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0ix-0v-q3J" customClass="SecondMapViewController" customModule="RateMyRun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FWd-vP-Brw"/>
                         <viewControllerLayoutGuide type="bottom" id="3SO-xd-n8B"/>

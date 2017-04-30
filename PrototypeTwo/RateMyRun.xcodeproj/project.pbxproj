@@ -13,7 +13,6 @@
 		475D1E261EA9BDFE00B270CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D1E251EA9BDFE00B270CA /* LoginViewController.swift */; };
 		475D1E281EA9BE0A00B270CA /* ResortPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D1E271EA9BE0A00B270CA /* ResortPageViewController.swift */; };
 		475D1E2A1EA9C17500B270CA /* SecondMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D1E291EA9C17500B270CA /* SecondMapViewController.swift */; };
-		47E1E2761EB66B5400256185 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E1E2751EB66B5400256185 /* LaunchViewController.swift */; };
 		47F59C031E81952300E1A71A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C021E81952300E1A71A /* AppDelegate.swift */; };
 		47F59C051E81952300E1A71A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C041E81952300E1A71A /* ViewController.swift */; };
 		47F59C081E81952300E1A71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F59C061E81952300E1A71A /* Main.storyboard */; };
@@ -46,7 +45,6 @@
 		475D1E251EA9BDFE00B270CA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		475D1E271EA9BE0A00B270CA /* ResortPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResortPageViewController.swift; sourceTree = "<group>"; };
 		475D1E291EA9C17500B270CA /* SecondMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondMapViewController.swift; sourceTree = "<group>"; };
-		47E1E2751EB66B5400256185 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		47F59BFF1E81952300E1A71A /* RateMyRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateMyRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F59C021E81952300E1A71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F59C041E81952300E1A71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				47F59C091E81952300E1A71A /* PrototypeTwo.xcdatamodeld */,
 				47F59C2F1E843A6C00E1A71A /* CommentTableViewController.swift */,
 				475D1E291EA9C17500B270CA /* SecondMapViewController.swift */,
-				47E1E2751EB66B5400256185 /* LaunchViewController.swift */,
 			);
 			name = RateMyRun;
 			path = PrototypeTwo;
@@ -246,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E1E2761EB66B5400256185 /* LaunchViewController.swift in Sources */,
 				475D1E241EA9BDE000B270CA /* RegisterPageViewController.swift in Sources */,
 				475D1E2A1EA9C17500B270CA /* SecondMapViewController.swift in Sources */,
 				4701FDA71EA2F67400761243 /* CommentTableViewCell.swift in Sources */,
