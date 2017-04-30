@@ -147,6 +147,10 @@ class WriteCommentViewController: UIViewController, UIPickerViewDelegate, UIPick
         runID = row
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
