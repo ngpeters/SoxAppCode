@@ -20,7 +20,7 @@
 		47F59C0B1E81952300E1A71A /* PrototypeTwo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C091E81952300E1A71A /* PrototypeTwo.xcdatamodeld */; };
 		47F59C0D1E81952300E1A71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F59C0C1E81952300E1A71A /* Assets.xcassets */; };
 		47F59C101E81952300E1A71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F59C0E1E81952300E1A71A /* LaunchScreen.storyboard */; };
-		47F59C1B1E81952400E1A71A /* PrototypeTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C1A1E81952400E1A71A /* PrototypeTwoTests.swift */; };
+		47F59C1B1E81952400E1A71A /* RateMyRunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C1A1E81952400E1A71A /* RateMyRunTests.swift */; };
 		47F59C301E843A6C00E1A71A /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F59C2F1E843A6C00E1A71A /* CommentTableViewController.swift */; };
 		47F9B85F1E96AB8E007121DD /* WriteCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F9B85E1E96AB8E007121DD /* WriteCommentViewController.swift */; };
 		47F9B8611E96AFA1007121DD /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F9B8601E96AFA1007121DD /* CosmosDistrib.swift */; };
@@ -47,7 +47,7 @@
 		475D1E271EA9BE0A00B270CA /* ResortPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResortPageViewController.swift; sourceTree = "<group>"; };
 		475D1E291EA9C17500B270CA /* SecondMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondMapViewController.swift; sourceTree = "<group>"; };
 		47E1E2751EB66B5400256185 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		47F59BFF1E81952300E1A71A /* PrototypeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrototypeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F59BFF1E81952300E1A71A /* RateMyRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateMyRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F59C021E81952300E1A71A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F59C041E81952300E1A71A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47F59C071E81952300E1A71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,8 +55,8 @@
 		47F59C0C1E81952300E1A71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47F59C0F1E81952300E1A71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47F59C111E81952300E1A71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47F59C161E81952400E1A71A /* PrototypeTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		47F59C1A1E81952400E1A71A /* PrototypeTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeTwoTests.swift; sourceTree = "<group>"; };
+		47F59C161E81952400E1A71A /* RateMyRunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateMyRunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F59C1A1E81952400E1A71A /* RateMyRunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMyRunTests.swift; sourceTree = "<group>"; };
 		47F59C1C1E81952400E1A71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47F59C2F1E843A6C00E1A71A /* CommentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		47F9B85E1E96AB8E007121DD /* WriteCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteCommentViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		47F59BF61E81952300E1A71A = {
 			isa = PBXGroup;
 			children = (
-				47F59C011E81952300E1A71A /* PrototypeTwo */,
-				47F59C191E81952400E1A71A /* PrototypeTwoTests */,
+				47F59C011E81952300E1A71A /* RateMyRun */,
+				47F59C191E81952400E1A71A /* RateMyRunTests */,
 				47F59C001E81952300E1A71A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,13 +96,13 @@
 		47F59C001E81952300E1A71A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47F59BFF1E81952300E1A71A /* PrototypeTwo.app */,
-				47F59C161E81952400E1A71A /* PrototypeTwoTests.xctest */,
+				47F59BFF1E81952300E1A71A /* RateMyRun.app */,
+				47F59C161E81952400E1A71A /* RateMyRunTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		47F59C011E81952300E1A71A /* PrototypeTwo */ = {
+		47F59C011E81952300E1A71A /* RateMyRun */ = {
 			isa = PBXGroup;
 			children = (
 				D6B0129B1EAF99FB00C96B94 /* Mineral.jpg */,
@@ -126,24 +126,26 @@
 				475D1E291EA9C17500B270CA /* SecondMapViewController.swift */,
 				47E1E2751EB66B5400256185 /* LaunchViewController.swift */,
 			);
+			name = RateMyRun;
 			path = PrototypeTwo;
 			sourceTree = "<group>";
 		};
-		47F59C191E81952400E1A71A /* PrototypeTwoTests */ = {
+		47F59C191E81952400E1A71A /* RateMyRunTests */ = {
 			isa = PBXGroup;
 			children = (
-				47F59C1A1E81952400E1A71A /* PrototypeTwoTests.swift */,
+				47F59C1A1E81952400E1A71A /* RateMyRunTests.swift */,
 				47F59C1C1E81952400E1A71A /* Info.plist */,
 			);
+			name = RateMyRunTests;
 			path = PrototypeTwoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		47F59BFE1E81952300E1A71A /* PrototypeTwo */ = {
+		47F59BFE1E81952300E1A71A /* RateMyRun */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47F59C1F1E81952400E1A71A /* Build configuration list for PBXNativeTarget "PrototypeTwo" */;
+			buildConfigurationList = 47F59C1F1E81952400E1A71A /* Build configuration list for PBXNativeTarget "RateMyRun" */;
 			buildPhases = (
 				47F59BFB1E81952300E1A71A /* Sources */,
 				47F59BFC1E81952300E1A71A /* Frameworks */,
@@ -153,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = PrototypeTwo;
+			name = RateMyRun;
 			productName = PrototypeTwo;
-			productReference = 47F59BFF1E81952300E1A71A /* PrototypeTwo.app */;
+			productReference = 47F59BFF1E81952300E1A71A /* RateMyRun.app */;
 			productType = "com.apple.product-type.application";
 		};
-		47F59C151E81952400E1A71A /* PrototypeTwoTests */ = {
+		47F59C151E81952400E1A71A /* RateMyRunTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47F59C221E81952400E1A71A /* Build configuration list for PBXNativeTarget "PrototypeTwoTests" */;
+			buildConfigurationList = 47F59C221E81952400E1A71A /* Build configuration list for PBXNativeTarget "RateMyRunTests" */;
 			buildPhases = (
 				47F59C121E81952400E1A71A /* Sources */,
 				47F59C131E81952400E1A71A /* Frameworks */,
@@ -171,9 +173,9 @@
 			dependencies = (
 				47F59C181E81952400E1A71A /* PBXTargetDependency */,
 			);
-			name = PrototypeTwoTests;
+			name = RateMyRunTests;
 			productName = PrototypeTwoTests;
-			productReference = 47F59C161E81952400E1A71A /* PrototypeTwoTests.xctest */;
+			productReference = 47F59C161E81952400E1A71A /* RateMyRunTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 47F59BFA1E81952300E1A71A /* Build configuration list for PBXProject "PrototypeTwo" */;
+			buildConfigurationList = 47F59BFA1E81952300E1A71A /* Build configuration list for PBXProject "RateMyRun" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -210,8 +212,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				47F59BFE1E81952300E1A71A /* PrototypeTwo */,
-				47F59C151E81952400E1A71A /* PrototypeTwoTests */,
+				47F59BFE1E81952300E1A71A /* RateMyRun */,
+				47F59C151E81952400E1A71A /* RateMyRunTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F59C1B1E81952400E1A71A /* PrototypeTwoTests.swift in Sources */,
+				47F59C1B1E81952400E1A71A /* RateMyRunTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		47F59C181E81952400E1A71A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 47F59BFE1E81952300E1A71A /* PrototypeTwo */;
+			target = 47F59BFE1E81952300E1A71A /* RateMyRun */;
 			targetProxy = 47F59C171E81952400E1A71A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.PrototypeTwoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrototypeTwo.app/PrototypeTwo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RateMyRun.app/RateMyRun";
 			};
 			name = Debug;
 		};
@@ -439,14 +441,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.PrototypeTwoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrototypeTwo.app/PrototypeTwo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RateMyRun.app/RateMyRun";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47F59BFA1E81952300E1A71A /* Build configuration list for PBXProject "PrototypeTwo" */ = {
+		47F59BFA1E81952300E1A71A /* Build configuration list for PBXProject "RateMyRun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47F59C1D1E81952400E1A71A /* Debug */,
@@ -455,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47F59C1F1E81952400E1A71A /* Build configuration list for PBXNativeTarget "PrototypeTwo" */ = {
+		47F59C1F1E81952400E1A71A /* Build configuration list for PBXNativeTarget "RateMyRun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47F59C201E81952400E1A71A /* Debug */,
@@ -464,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47F59C221E81952400E1A71A /* Build configuration list for PBXNativeTarget "PrototypeTwoTests" */ = {
+		47F59C221E81952400E1A71A /* Build configuration list for PBXNativeTarget "RateMyRunTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47F59C231E81952400E1A71A /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "47F59BFE1E81952300E1A71A"
-               BuildableName = "PrototypeTwo.app"
-               BlueprintName = "PrototypeTwo"
-               ReferencedContainer = "container:PrototypeTwo.xcodeproj">
+               BuildableName = "RateMyRun.app"
+               BlueprintName = "RateMyRun"
+               ReferencedContainer = "container:RateMyRun.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "47F59C151E81952400E1A71A"
-               BuildableName = "PrototypeTwoTests.xctest"
-               BlueprintName = "PrototypeTwoTests"
-               ReferencedContainer = "container:PrototypeTwo.xcodeproj">
+               BuildableName = "RateMyRunTests.xctest"
+               BlueprintName = "RateMyRunTests"
+               ReferencedContainer = "container:RateMyRun.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47F59BFE1E81952300E1A71A"
-            BuildableName = "PrototypeTwo.app"
-            BlueprintName = "PrototypeTwo"
-            ReferencedContainer = "container:PrototypeTwo.xcodeproj">
+            BuildableName = "RateMyRun.app"
+            BlueprintName = "RateMyRun"
+            ReferencedContainer = "container:RateMyRun.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47F59BFE1E81952300E1A71A"
-            BuildableName = "PrototypeTwo.app"
-            BlueprintName = "PrototypeTwo"
-            ReferencedContainer = "container:PrototypeTwo.xcodeproj">
+            BuildableName = "RateMyRun.app"
+            BlueprintName = "RateMyRun"
+            ReferencedContainer = "container:RateMyRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -92,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47F59BFE1E81952300E1A71A"
-            BuildableName = "PrototypeTwo.app"
-            BlueprintName = "PrototypeTwo"
-            ReferencedContainer = "container:PrototypeTwo.xcodeproj">
+            BuildableName = "RateMyRun.app"
+            BlueprintName = "RateMyRun"
+            ReferencedContainer = "container:RateMyRun.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import PrototypeTwo
+@testable import RateMyRun
 
-class PrototypeTwoTests: XCTestCase {
+class RateMyRunTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
