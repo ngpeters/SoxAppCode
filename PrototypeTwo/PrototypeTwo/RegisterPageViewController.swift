@@ -93,13 +93,6 @@ class RegisterPageViewController: UIViewController {
             return
         }
         
-        
-        //store data -- this is locally stored right now!
-//        UserDefaults.standard.set(userEmail, forKey: "userEmail")
-//        UserDefaults.standard.set(userPassword, forKey: "userPassword")
-//        UserDefaults.standard.set(username, forKey: "username")
-//        UserDefaults.standard.synchronize()
-        
         //store data
         //to server
         data_request("https://ratemyrun.herokuapp.com/newuser?")
@@ -127,14 +120,9 @@ class RegisterPageViewController: UIViewController {
     @IBAction func AlreadyHaveAnAccount(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-    */
 
 }
