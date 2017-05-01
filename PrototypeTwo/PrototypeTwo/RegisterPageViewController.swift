@@ -34,7 +34,6 @@ class RegisterPageViewController: UIViewController {
         let parameters = ["username" : username ,
                           "password" : userPassword,
                           "email" : userEmail].map { "\($0)=\($1 )" }
-        //map { "\($0)=\($1 ?? "")" }
         
         let paramString = parameters.joined(separator: "&")
         
@@ -51,9 +50,7 @@ class RegisterPageViewController: UIViewController {
         let request = NSMutableURLRequest(url: url as URL)
         
         request.httpMethod = "POST"
-        
-//        request.httpBody = paramString.data(using: String.Encoding.utf8)
-        
+                
         let task = session.dataTask(with: request as URLRequest) {
             (
             data, response, error) in

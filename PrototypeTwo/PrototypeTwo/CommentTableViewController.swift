@@ -95,37 +95,6 @@ class CommentTableViewController: UITableViewController {
         
     }
     
-    /*func getUserName(idArray: [Int]){
-        for userIDnumber in self.userID {
-            
-            let userIDString = String(userIDnumber)
-            let url:String = "http://ratemyrun.herokuapp.com/lookupusername?userID="+userIDString
-            let urlRequest = URL(string: url)
-            
-            URLSession.shared.dataTask(with: urlRequest!, completionHandler: {
-                (data, response, error) in
-                if (error != nil) {
-                    print(error.debugDescription)
-                }else{
-                    do{
-                        let jArray = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
-                            as! NSDictionary as Dictionary
-                        if let dic = jArray as? [String : AnyObject]{
-                            if let userNameFromID = dic["body"] as? String {
-                                self.username.append(userNameFromID)
-                            }
-                        }
-                        
-                    }catch let error as NSError{
-                        print(error)
-                    }
-                }
-                
-            }).resume()
-        }
-        
-    }*/
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
