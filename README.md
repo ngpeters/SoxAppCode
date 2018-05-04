@@ -14,4 +14,4 @@ The app has the following features:
 - A 5 star ratting system is also implmented
 - Two buttons on this page can cancle or post to the database
 
--4/27 heroku connections have been implemented
+-4/27/17 heroku connections have been implemented
